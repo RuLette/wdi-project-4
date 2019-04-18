@@ -1,0 +1,146 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+input, select, textarea, button{font-family:inherit;}
+
+.container {
+  margin-top: 50px;
+}
+
+.photoscroll {
+  width: 400px;
+  height: 400px;
+}
+
+.rightmenu {
+  margin-bottom: 20px;
+  text-align: right;
+  margin-botton: 40px;
+  width: 1200px;
+}
+
+.indexsection {
+  width: 1000px;
+}
+
+.indexdiv {
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.indexoptiondiv {
+  margin-left: 40px ;
+  margin-bottom: 40px;
+  width: 1000px;
+
+}
+.imgshow {
+  overflow: hidden;
+  width: 290px;
+}
+
+.imgsmallshow {
+  max-width: 300px;
+}
+
+.qraftylogo {
+  width: 100px;
+  height: 100px;
+}
+
+.carddiv {
+  width: 290px;
+  height: 500px;
+}
+
+.carddescript {
+  height: 200px;
+}
+
+.imgdiv {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.hero {
+  max-width: 98%;
+}
+
+.showdiv {
+  width: 600px;
+  height: 700px;
+  display: flex;
+  background-color: teal;
+}
+
+
+
+.comments {
+  margin-top: 20px;
+}
+
+.commentsdiv {
+  line-height: 2;
+}
+
+.select {
+
+}
+.qraftindexdiv {
+  margin-bottom: 40px;
+}
+
+main {
+  width: 800px;
+  padding:auto;
+  margin: 0 auto 50px;
+}
+
+h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-align: center;
+  font-size: 75px;
+  color: black;
+ margin: 60px 0 40px 0;
+}
+
+h2 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+body {
+ font-family: 'Ubuntu Condensed', sans-serif;
+ font-size: 14px;
+}
+
+
+a {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+a:visited {
+  color: gray;
+  font-size: 16px;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+a:active {
+text-decoration: underline;
+}
+
+
+.margincard {
+  margin-left: 30px;
+}
+
+.featured {
+  margin-right: 40px;
+}
