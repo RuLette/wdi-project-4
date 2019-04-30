@@ -19,11 +19,18 @@ class QraftsEdit extends React.Component {
   }
 
   componentDidMount() {
+    this.getQraft()
     axios.get('/api/materials')
       .then(res => {
         this.setState({ materials: res.data})
       })
       .catch(err => console.log(err))
+
+  }
+
+  getQraft() {
+    axios.get(`/api/qrafts/${this.props.match.params.id}`)
+      .then(res => this.setState({ data: res.data }))
   }
 
   handleChange({ target: { name, value }}) {
