@@ -62,3 +62,18 @@ def follow(user_id):
     followed_user.followers.append(current_user)
     followed_user.save()
     return jsonify({'message': 'success'}), 200
+#
+# @api.route('/users/<int:user_id>/follow', methods=['DELETE'])
+# @secure_route
+# def unfollow(user_id):
+#     data=request.get_json()
+#     current_user = g.current_user
+#     followed_user = User.query.get(user_id)
+#
+#     # followers = followed_user.followers
+#     return jsonify(followed_user)
+#     # new_followers = list(filter(lambda follower: follower['id'] != current_user['id'], followers))
+#     #
+#     # followed_user.followers = new_followers
+#     # followed_user.save()
+#     return jsonify({'message': 'user removed'}), 200
