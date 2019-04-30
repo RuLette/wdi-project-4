@@ -46,6 +46,8 @@ def update(qraft_id):
         return jsonify(errors), 422
 
     if qraft.creator != g.current_user:
+        print(qraft.creator)
+        print(g.current_user)
         return jsonify({'message': 'Unauthorized'}), 401
 
     qraft.save()

@@ -117,7 +117,7 @@ class QraftShow extends React.Component {
                   <Button.Group floated='right'>
 
                     <button  className= "ui mini basic button " attached='left'>
-                      <Link to={`/qrafts/${Auth.getPayload().sub}/edit`}>Edit Qraft</Link>
+                      <Link to={`/qrafts/${this.props.match.params.id}/edit`}>Edit Qraft</Link>
                     </button>
 
                     <button  className= "ui mini basic button " attached='right' onClick={() => this.handleDelete(qraft)}>
