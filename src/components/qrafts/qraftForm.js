@@ -21,7 +21,7 @@ const QraftForm = ({ data, handleChange, handleSubmit, materials, errors }) => {
                     onChange={handleChange}
                     value={data.name || ''}
                   />
-                  {errors.name && <p>Please enter a name</p> }
+      
                 </div>
               </div>
 
@@ -111,7 +111,7 @@ const QraftForm = ({ data, handleChange, handleSubmit, materials, errors }) => {
 
               <div className="field">
                 <label className="label">Additional info</label>
-              
+
                 <div className="control">
                   <textarea
                     className="input"
