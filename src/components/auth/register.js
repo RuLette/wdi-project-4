@@ -15,7 +15,7 @@ class Register extends React.Component {
         profile_picture: '',
         profile_description: ''
       },
-      errors: {}
+      errors: []
     }
 
     this.mapCenter = {
@@ -66,7 +66,6 @@ class Register extends React.Component {
                       value={this.state.data.username}
                       onChange={this.handleChange}
                     />
-                    { this.state.errors ? <h4>ERROR: {this.state.errors}</h4> : null }
                   </Form.Field>
 
                   <Form.Field>
