@@ -3,8 +3,8 @@
 
 ## Overview
 
-[Deployed web app] (https://qraft.herokuapp.com/ "Qraft") Deployed web app
-qraft.herokuapp.com
+[Qraft] (https://qraft.herokuapp.com/)
+*qraft.herokuapp.com*
 
 Qraft is a full stack web application for furniture makers to showcase DIY or handmade pieces. A 'qraft' is a moniker for pieces of furniture uploaded by the user for the site.
 
