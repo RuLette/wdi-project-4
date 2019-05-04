@@ -1,8 +1,8 @@
-#Qraft
+# Qraft
 
  - - - -
 
-###Overview
+### Overview
 
  Qraft is a full stack web application for furniture makers to showcase DIY or handmade pieces. A 'qraft' is a moniker for pieces of furniture uploaded by the user for the site.
 
@@ -16,15 +16,15 @@
    - Leave comments about pieces of furniture
    - Edit personal profile details, or delete their account
 
-##Project Brief
+## Project Brief
 With a time frame of 7 days, create a full-stack application utilising Python Flask, with data served from a PostgreSQL database. The database should demonstrate CRUD functionality and models should demonstrate multiple relationships.
 
 The API should have a front-end built with React.
 
-##Timeframe
+## Timeframe
 7 days
 
-##Technologies used
+## Technologies used
 HTML5
 SASS/SCSS
 JavaScript (ES6)
@@ -38,15 +38,15 @@ Flask
 Git/GitHub
 React Semantic UI
 
-##Deployed web app
+## Deployed web app
 qraft.herokuapp.com
 
-##Development process
+## Development process
 
 The first step of the project was to plan the models and database structure.
 Wire framing was made with pen and paper, before I used Trello to manage the project.
 
-###BackEnd
+### BackEnd
 
 The main Python framework used was Python-Flask, with SQLAlchemy utilised for database interaction.
 
@@ -56,12 +56,14 @@ As data retrieved from the PostgreSQL database via SQLAlchemy were objects, the 
 
 Once the database was functional, models and routes were created. The first model created was the user, followed by the qrafts that were relational to the user. Comments and followers were attached to the user model. Once the CRUD routes and testing were working with requests made in Insomnia, I could move onto creating the frontend of the application using React.
 
-###Frontend
+### Frontend
 
 I first created the login and register pages for users, before creating the index, home page, and show page for qrafts.
 
 The data from the backend database often had to be filtered as the information came back in an object or array. For instance, in the case of filtering the qrafts by materials created, the reduce method was used to spread the data from materials into a new array.
 
+~~~
+```
 axios.get('api/qrafts')
   .then(res => {
     console.log(res)
@@ -70,6 +72,8 @@ axios.get('api/qrafts')
       const newMaterials = qraft.materials.filter(material => !existingIDs.includes(material.id))
       return [...acc, ...newMaterials]
     }, [])
+    ```
+~~~
 
 The front end of the application required the use of several ternary operators, and several JavaScript ES6 features such as the spread operator, map and filter to extract data from the backend.
 
@@ -79,18 +83,22 @@ For styling the application, I used front end framework React Semantic UI. As it
 
 One of the biggest challenges in building this application involved directing information for users who were authenticated and those who were just browsing the site. Another layer of complexity included allowing only users who are logged in to edit qrafts which belonged to them, which meant the application needed information from the back end database about who the user browsing the page is.
 
-In the backend, the current user (the user logged in) was defined by a flask object known as g. In the front end, this data could be accessed and used to define if the user id matched that of the user logged in.
+In the backend, the definition of the current user (the user logged in) was and saved by a flask object known as g.
 
-isOwner() {
-  return Auth.isAuthenticated() && this.state.user.id === Auth.getPayload().sub
-}
+```
+        g.current_user = user
+```
 
-getUser() {
+ In the front end, this data could be accessed and used to define if the user id matched that of the user logged in.
+
+~~~
+```getUser() {
   axios.get(`/api/users/${Auth.getPayload().sub}`)
     .then(res => {
-      this.setState({ user: res.data })
+      this.setState({ currentUser: res.data })
     })
-}
+}```
+~~~
 
 As this was a solo project, the time frame given to complete the application - 7 days meant I had to recognize there was alot of functionality I still wanted to add.
 

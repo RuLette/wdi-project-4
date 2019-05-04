@@ -85,7 +85,6 @@ class QraftShow extends React.Component {
   getUser() {
     axios.get(`/api/users/${Auth.getPayload().sub}`)
       .then(res => {
-        console.log(res, 'getting user')
         this.setState({ currentUser: res.data })
       })
   }
