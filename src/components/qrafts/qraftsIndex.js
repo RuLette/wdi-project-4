@@ -75,7 +75,6 @@ class QraftIndex extends React.Component {
   getUser() {
     axios.get(`/api/users/${Auth.getPayload().sub}`)
       .then(res => {
-        console.log(res, 'getting user')
         this.setState({ user: res.data })
       })
   }
@@ -83,7 +82,6 @@ class QraftIndex extends React.Component {
   render() {
     const {qrafts, materials} = this.state
     {qrafts && console.log(qrafts)}
-    console.log(this.state.user.id)
     if(!qrafts) return null
     return (
 
