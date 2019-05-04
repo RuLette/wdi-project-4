@@ -3,7 +3,7 @@
 
 ## Overview
 
-*Qraft* https://qraft.herokuapp.com/
+https://qraft.herokuapp.com/
 
 
 Qraft is a full stack web application for furniture makers to showcase DIY or handmade pieces. A 'qraft' is a moniker for pieces of furniture uploaded by the user for the site.
@@ -20,6 +20,9 @@ Users who are logged in can access more of the app's functionality including:
 
 ![qraft](https://user-images.githubusercontent.com/29276064/57179757-0544bd80-6e79-11e9-8dfe-3562342a703b.png)
 
+![qraftdoor](https://user-images.githubusercontent.com/29276064/57179928-56ee4780-6e7b-11e9-80c0-1ffd9502fdb6.png)
+
+![qraftcomments](https://user-images.githubusercontent.com/29276064/57179998-e136ab80-6e7b-11e9-8a8f-c7e78b5ce402.png)
 
 ### Project Brief
 With a time frame of 7 days, create a full-stack application utilising Python Flask, with data served from a PostgreSQL database. The database should demonstrate CRUD functionality and models should demonstrate multiple relationships.
@@ -32,13 +35,15 @@ The API should have a front-end built with React.
 - JavaScript (ES6)
 - React
 - Webpack
-- Insomnia
-- PostgreSQL
-- SQLAlchemy
 - Python 3.7
 - Flask
+- Marshmallow
+- PostgreSQL
+- SQLAlchemy
+- Insomnia
 - Git/GitHub
 - React Semantic UI
+- Moment
 
 ## Development process
 
@@ -103,4 +108,5 @@ As this was a solo project, the time frame given to complete the application - 7
 
 - User profiles would display how many followers each user has
 - Users who are logged in can like qrafts they admire
+- Better error handling and validation for forms
 - A messaging function between users
