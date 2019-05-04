@@ -1,6 +1,5 @@
 # Qraft
 
- - - - -
 
 ### Overview
 
@@ -16,6 +15,8 @@
    - Leave comments about pieces of furniture
    - Edit personal profile details, or delete their account
 
+   ![qraft](https://user-images.githubusercontent.com/29276064/57179757-0544bd80-6e79-11e9-8dfe-3562342a703b.png)
+
 ## Project Brief
 With a time frame of 7 days, create a full-stack application utilising Python Flask, with data served from a PostgreSQL database. The database should demonstrate CRUD functionality and models should demonstrate multiple relationships.
 
@@ -25,18 +26,18 @@ The API should have a front-end built with React.
 7 days
 
 ## Technologies used
-HTML5
-SASS/SCSS
-JavaScript (ES6)
-React
-Webpack
-Insomnia
-PostgreSQL
-SQLAlchemy
-Python 3.7
-Flask
-Git/GitHub
-React Semantic UI
+- HTML5
+- SASS/SCSS
+- JavaScript (ES6)
+- React
+- Webpack
+- Insomnia
+- PostgreSQL
+- SQLAlchemy
+- Python 3.7
+- Flask
+- Git/GitHub
+- React Semantic UI
 
 ## Deployed web app
 qraft.herokuapp.com
@@ -63,7 +64,6 @@ I first created the login and register pages for users, before creating the inde
 The data from the backend database often had to be filtered as the information came back in an object or array. For instance, in the case of filtering the qrafts by materials created, the reduce method was used to spread the data from materials into a new array.
 
 ~~~
-```
 axios.get('api/qrafts')
   .then(res => {
     console.log(res)
@@ -72,14 +72,13 @@ axios.get('api/qrafts')
       const newMaterials = qraft.materials.filter(material => !existingIDs.includes(material.id))
       return [...acc, ...newMaterials]
     }, [])
-    ```
 ~~~
 
 The front end of the application required the use of several ternary operators, and several JavaScript ES6 features such as the spread operator, map and filter to extract data from the backend.
 
 For styling the application, I used front end framework React Semantic UI. As it was my first time using this framework, I had to read the documentation provided by Semantic UI to implement the framework on forms, user comments and page layouts.
 
-##Challenges
+## Challenges
 
 One of the biggest challenges in building this application involved directing information for users who were authenticated and those who were just browsing the site. Another layer of complexity included allowing only users who are logged in to edit qrafts which belonged to them, which meant the application needed information from the back end database about who the user browsing the page is.
 
@@ -92,17 +91,17 @@ In the backend, the definition of the current user (the user logged in) was and 
  In the front end, this data could be accessed and used to define if the user id matched that of the user logged in.
 
 ~~~
-```getUser() {
+getUser() {
   axios.get(`/api/users/${Auth.getPayload().sub}`)
     .then(res => {
       this.setState({ currentUser: res.data })
     })
-}```
+}
 ~~~
 
 As this was a solo project, the time frame given to complete the application - 7 days meant I had to recognize there was alot of functionality I still wanted to add.
 
-##Future features
+## Future features
 
 - User profiles would display how many followers each user has
 - Users who are logged in can like qrafts they admire
