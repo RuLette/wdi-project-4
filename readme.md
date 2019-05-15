@@ -40,6 +40,7 @@ Users who are logged in can access more of the app's functionality including:
    - Edit personal profile details, or delete their account
 
 <br />
+
 ![qraftdoor](https://user-images.githubusercontent.com/29276064/57179928-56ee4780-6e7b-11e9-80c0-1ffd9502fdb6.png)
 
 <br />
