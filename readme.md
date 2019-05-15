@@ -1,29 +1,5 @@
 # Qraft
 
-
-## Overview
-
-https://qraft.herokuapp.com/
-
-
-Qraft is a full stack web application for furniture makers to showcase DIY or handmade pieces. A 'qraft' is a moniker for pieces of furniture uploaded by the user for the site.
-
-Users who are logged in can access more of the app's functionality including:
-
-   - View user profile
-   - View more details about the qraft created
-   - Upload photos of qrafts
-   - Post, edit or delete a qraft
-   - Follow furniture makers and contact them for custom orders.
-   - Leave comments about pieces of furniture
-   - Edit personal profile details, or delete their account
-
-![qraft](https://user-images.githubusercontent.com/29276064/57179757-0544bd80-6e79-11e9-8dfe-3562342a703b.png)
-
-![qraftdoor](https://user-images.githubusercontent.com/29276064/57179928-56ee4780-6e7b-11e9-80c0-1ffd9502fdb6.png)
-
-![qraftcomments](https://user-images.githubusercontent.com/29276064/57179998-e136ab80-6e7b-11e9-8a8f-c7e78b5ce402.png)
-
 ### Project Brief
 With a time frame of 7 days, create a full-stack application utilising Python Flask, with data served from a PostgreSQL database. The database should demonstrate CRUD functionality and models should demonstrate multiple relationships.
 
@@ -44,6 +20,31 @@ The API should have a front-end built with React.
 - Git/GitHub
 - React Semantic UI
 - Moment
+
+## Overview
+
+https://qraft.herokuapp.com/
+
+Qraft is a full stack web application for furniture makers to showcase DIY or handmade pieces. A 'qraft' is a moniker for pieces of furniture uploaded by the user for the site.
+
+![qraft](https://user-images.githubusercontent.com/29276064/57179757-0544bd80-6e79-11e9-8dfe-3562342a703b.png)
+
+Users who are logged in can access more of the app's functionality including:
+
+   - View user profile
+   - View more details about the qraft created
+   - Upload photos of qrafts
+   - Post, edit or delete a qraft
+   - Follow furniture makers and contact them for custom orders.
+   - Leave comments about pieces of furniture
+   - Edit personal profile details, or delete their account
+
+<br />
+![qraftdoor](https://user-images.githubusercontent.com/29276064/57179928-56ee4780-6e7b-11e9-80c0-1ffd9502fdb6.png)
+
+<br />
+
+![qraftcomments](https://user-images.githubusercontent.com/29276064/57179998-e136ab80-6e7b-11e9-8a8f-c7e78b5ce402.png)
 
 ## Development process
 
